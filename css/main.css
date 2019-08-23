@@ -1590,7 +1590,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 4.2rem 0 12rem;
   background-color: #FFFFFF;
-  min-height: 696px;
+  min-height: 700px;
   text-align: center;
 }
 #about .about-wrap {
@@ -1746,10 +1746,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list {
   margin-top: 1.2rem;
   text-align: center;
+  display: flex;
 }
 #services .services-list .service-item {
   margin-bottom: 3rem;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 #services .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
@@ -1767,12 +1768,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   border-radius: 50%;
   transition: all 0.4s;
 }
-#services .services-list .logo.ec:hover {
-  box-shadow: 0px 0px 20px 0px #00adf4;
+#services .services-list .logo.ag:hover {
+  box-shadow: 0px 0px 20px 0px #7caf50;
   opacity: 0.9;
 }
 #services .services-list .logo.bl:hover {
   box-shadow: 0px 0px 20px 0px #e4003e;
+  opacity: 0.9;
+}
+#services .services-list .logo.ec:hover {
+  box-shadow: 0px 0px 20px 0px #00adf4;
   opacity: 0.9;
 }
 #services .services-list .icon i {
@@ -1813,8 +1818,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #services .services-content {
 	max-width: 550px;
   }
+  #services .services-list {
+    flex-wrap: wrap;
+  }
   #services .services-list .service-item {
-	padding: 0 15px;
+  padding: 0 15px;
+  width: 100%;
   }
   #services .services-list .icon i {
 	font-size: 5.1rem;
@@ -2050,12 +2059,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     color: rgba(255, 255, 255, 0.8);
 }
 #contact .contact-info a {
-    color: rgba(7, 67, 100, 1);
-    opacity: 0.9;
-}
-#contact .contact-info a:hover {
     color: rgba(0, 121, 183, 0.8);
     opacity: 1;
+}
+#contact .contact-info a:hover {
+    color: rgba(7, 67, 100, 1);
+    opacity: 0.9;
 }
 #contact .contact-info h5 {
     padding: 0;
